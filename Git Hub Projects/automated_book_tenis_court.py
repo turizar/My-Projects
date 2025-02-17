@@ -8,7 +8,7 @@ from tkinter import *
 
 # Choose Hours Panel
 root = Tk()
-root.title("Reserva Hora Tenis Parque Araucano")
+root.title("Book Tennis Court")
 root.geometry("400x400")
 horas = []  # 1: 9am, 2: 10am, 3: 11am, 4: 12am, 5: 1pm, 6: 2pm, 7: 3pm, 8: 4pm, 9: 5pm, 10: 6pm, 11: 7pm, 12: 8pm
 dic_hours = {'9:00': 1, '10:00': 2, '11:00': 3, '12:00': 4, '13:00': 5, '14:00': 6, '15:00': 7, '16:00': 8, '17:00': 9, '18:00': 10, '19:00': 11, '20:00': 12}
@@ -71,7 +71,7 @@ email = "XXXXX"
 phone = "XXXXX"
 current_available_reservations = 0
 number_attempts = 0
-reservation_successful = False  # Variable de control
+reservation_successful = False  # Control Variable
 
 while not reservation_successful and number_attempts <= 20:  # Run until a time is successfully booked
 
@@ -128,5 +128,5 @@ while not reservation_successful and number_attempts <= 20:  # Run until a time 
         accept_and_end = driver.find_element(By.XPATH, "//div/div[1]/div[3]/div[2]/button")
         accept_and_end.click()
         time.sleep(2)
-        print("Hora Reservada con Éxito")
+        print("Booking Successful")
         break  # Exit the while loop once a time has been reserved
