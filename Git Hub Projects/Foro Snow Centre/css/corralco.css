@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: var(--bs-body-font-family);
+    font-size: 1.125rem; /* Tamaño de fuente igual al .bd-placeholder-img */
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    background-color: #ffffff; /* Color de fondo blanco */
+    padding-top: 3rem; /* Espaciado superior */
+    padding-bottom: 3rem; /* Espaciado inferior */
+    margin: 0;
+    text-align: left; /* Alinear todo el texto a la izquierda */
+}
+
+/* Títulos en el header */
+header h1 {
+    font-size: 3.5rem; /* Ajuste del tamaño del título en pantallas grandes */
+    font-weight: 600; /* Peso de fuente en negrita */
+    text-align: left; /* Alinear el texto del título a la izquierda */
+}
+
+
+/* Navbar */
+.navbar {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: left; /* Alineación de los elementos del navbar a la izquierda */
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+/* Para los elementos dentro del carrusel */
+.carousel-caption p,
+.carousel-caption h1 {
+    text-align: justify; /* Justificar texto en el carrusel */
+}
+
+.carousel-item {
+    height: 32rem; /* Tamaño de cada ítem en el carrusel */
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+
+/* Definir el ancho máximo de los contenedores */
+.content {
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: left; /* Alineación a la izquierda del contenido principal */
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Estilo para las imágenes principales */
+.content img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible */
+    height: auto; /* Mantener la proporción de la imagen */
+    object-fit: cover; /* Ajustar imagen sin distorsionar */
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Información boxes */
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Box styling */
+.box {
+    width: 30%;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    padding: 20px;
+    text-align: left; /* Alineación a la izquierda en los boxes */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover efecto en boxes */
+.box:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes redondeadas */
+.box img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .info-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%; /* Cuadros ocupando el 100% en pantallas pequeñas */
+    }
+
+    .content {
+        width: 100%; /* Expandir el contenido */
+    }
+}
