@@ -1,5 +1,0 @@
-- Para mobile responsive, ajustar el tamanio de las fotos para las paginas de cada cabania
-- Reducir el tamaño de las fotos para que el sitio web cargue mas rapido
-
-Reunion Oscar:
-- Que al traducir la pagina, no cambie el correo
