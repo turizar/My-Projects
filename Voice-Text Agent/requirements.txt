@@ -1,0 +1,12 @@
+# Dependencies for Complete Voice Agent
+torch>=2.0.0
+streamlit>=1.28.0
+soundfile>=0.12.0
+numpy>=1.21.0
+
+# TTS (Text-to-Speech) - Main engine
+TTS>=0.22.0
+
+# STT (Speech-to-Text) - Speech recognition
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.11
